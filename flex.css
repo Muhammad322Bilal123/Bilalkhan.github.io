@@ -101,3 +101,31 @@ html
     padding-right: 10px;
     margin-right: 8px;
 }
+
+.Grids
+{
+    border: 2px solid green;
+    padding: 200px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    justify-content: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 200px 100px 100px;
+    grid-template-rows: 2fr 1fr
+}
+
+.Grids .items
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+    border: 1px solid;
+    background-color: aqua;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
