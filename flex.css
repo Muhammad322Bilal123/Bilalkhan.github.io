@@ -1,21 +1,102 @@
-.links
+*
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: aquamarine;
-    border: 1px solid;
-    border-radius: 100px;
-    text-decoration: none;
-    color: black;
+    padding: 0;
+    margin: 0;
 }
 
-
-.right , .left
+html
 {
+    margin-left: 26px;
+    margin-right: 26px;
+}
+
+.top_row
+{
+    margin-top: 22px;
+    margin-left: 22px;
+    margin-right: 29px;
+    /* border-radius: 100px;
+    border: 1px solid;
+    border-left: 10px; */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
+}
+
+.link
+{
+    padding: 40px;
+    padding-left: 30px;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.link .home
+{
+    padding-right: 30px;
+    margin-right: 20px;
+}
+
+.link .Learning
+{
+    padding-right: 30px;
+    margin-right: 20px;
+}
+
+.link .Degree
+{
+    padding-right: 30px;
+    margin-right: 20px;
+}
+
+.link .find
+{
+    padding-right: 30px;
+    margin-right: 20px;
+}
+
+.o 
+{
+    padding: 20px;
+    padding-top: 45px;
+    padding-left: 18px;
+}
+
+.o > .heading
+{
+    /* color: antiquewhite; */
+    font-weight: 400;
+}
+
+.o .buttons
+{
+    margin-left: 8px;
+    padding-top: 10px;
+
+}
+
+.o .in_progress
+{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+
+.o .completed
+{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 8px;
 }
