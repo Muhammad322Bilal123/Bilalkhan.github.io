@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 0 2 auto;
     border-radius: 20px;
     border: 1px solid;
     background-color: aqua;
