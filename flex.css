@@ -1,38 +1,32 @@
-.header
+/* H1 Header */
+header h1
 {
-    display: grid;
-    grid-template-columns: 30px 20px 2fr;
-    align-items: center;
-
-    /* border: 1px solid; */
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 2rem;
 }
 
-.header .coursera
+/* Mian */
+/* main
 {
-    /* background-color: gainsboro; */
-    /* display: grid; */
-    align-items: center;
-    size: 10vw;
-    size: 20vh;
-    
+    display: flex;
+
+} */
+
+form
+{
+   display: grid;
+   align-content: center;
+   align-items: center;
 }
 
-.header .menu
+main h2
 {
-    /* background-color: aqua; */
-}
-
-.header .search 
-{
-    /* background-color: yellowgreen; */
-
-    display: grid;
-    justify-items: end;
-}
-
-.body
-{
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
+    text-align: center;
+    border: 1px solid rgb(61, 9, 252);
+    border-radius: 90px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
