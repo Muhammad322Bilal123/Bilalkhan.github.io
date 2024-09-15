@@ -14,7 +14,7 @@
     <main>
         <h2>Sign in </h2> 
         <!-- First Step Form -->
-        <form id="first_step_form">
+        <form id="first_step_form" enctype="multipart/form-data" >
             <div id="for_username">
             <br ><label for="username">Username</label> <br >
             <input type="text" id="username" name="username" autocapitalize="off" autocomplete="off"  placeholder="xyz12@example.com">
@@ -34,7 +34,9 @@
                 <li>
                     contains atleast 1 number
                 </li>
-            </ul>
+            </ul> <hr >
+
+                <input  type="file" multiple id="photo" name="photo" class="photo" multiple style="margin: 40px; border-radius: 20px; border: 1px solid; padding: 40px; background-color: antiquewhite;">
 
             <button >Submit</button>
 
