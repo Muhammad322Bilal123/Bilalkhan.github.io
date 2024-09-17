@@ -4,83 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="fform.js" ></script>
+
     <style>
-        form #number
+        label
         {
-            margin-top: 80px;
-            margin-left: 40px;
-            padding: 20px;
-
-            font-size: 2rem;
-            line-height: 1.1;
-
-            border-radius: 20px;
-            border-style: dotted;
-            border-color: rgb(2, 2, 2);
-
+            font-size: larger;
+            margin-left: 50px;
         }
-
-        form #number:focus
-        {
-            /* padding: 15px;
-            padding-right: 40px;
-            border-color: rgb(67, 0, 250);
-            color: rgb(67, 0, 250); */
-            /* border-style: dashed; */
-        }
-
-        button:invalid::after
-        {
-            border-radius: 20px;
-            border-color: red;
-            color: red;
-        }
-
-        button
-        {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 40px;
-            padding-right: 40px;
-            margin-left: 40px;
-            border-radius: 20px;
-            line-height: 1.5;
-
-        }
-
-        button:hover
-        {
-            color: rgb(242, 242, 245);
-            background-color: blue;
-            border: 1px solid blue
-        }
-
-        button:focus
-        {
-            outline: 1px solid rgb(72, 5, 255);
-            border-radius: 20px;
-            color: blue;
-            border-style: dotted;
-            border-style: none;
-            
-        }
-
-
     </style>
 
-        
+    
     <title>Document</title>
 </head>
 <body>
     
-    <form style="font-size: 32px;">
-        <label for="name" style="font-size: 1.5em;">Name</label> <br >
-        <input value="Bilal" id="name" name="name" userkeyhint="next" style="font-size: 2rem;"> <br >
-        <input type="number" id="number" name="number" autocomplete="shipping" min="0" max="15" >
-        <hr >
-        <input type="url" id="url" name="url" autocapitalize="off" autofocus required> <br >
-        <button id="submit" style="margin-top: 40px; margin-left: 30px;">Submit</button>
-    </form>
+   <form>
+       <label for="dob">Date of Birth</label>
+       <input type="date" id="dob" name="dob" >
+   </form>
 
 
 
