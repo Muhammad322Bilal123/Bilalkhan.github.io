@@ -1,56 +1,45 @@
 <!DOCTYPE html>
-<html lang="en" style="font-size: 32px;">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="fform.js" ></script>
-
-<!--     <style>
+    <title>Document</title>
+    <style>
         label
         {
+            margin-top: 100px;
+            margin-left: 60px;
+            margin-right: 40px;
+
+            padding: 40px;
+
             font-size: larger;
-            margin-left: 50px;
         }
 
-        form input
+        label img
         {
-            display: flex;
-            align-item: center;
-            align-content: center;
-            
-            border: 3px dotted gold;
-            border-radius: 20px;
+            margin-top: 100px;
+            margin-left: 60px;
+            margin-right: 40px;
 
-            
-            height: 30px;
-
-            margin-top: 30px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding: 40px;
         }
 
-        form input:focus
+        input
         {
-            border: 3px dotted gold;
-            border-radius: 20px;
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
         }
-        
-    </style> -->
 
-    
-    <title>Document</title>
+    </style>
+
 </head>
 <body>
+    <label for="upload_image">  
+        <img src="upload_image.png" title="upload_image" alt="upload image Icon" width="50px" height="50" >
+    </label>
+    <input type="file" accept="image/.jpeg , image/.png" value="" name="upload_image" id="upload_image" >
     
-   <form>
-       <label for="pp">Profile Picture</label>
-       <input type="file" id="pp" name="pp" accept="image/*" capture="user" > <br >
-       <input type="file" accept="image/*" capture="camera" user="user" >
-   </form>
-
-
-
 </body>
 </html>
