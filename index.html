@@ -18,7 +18,7 @@
 
         label img
         {
-            margin-top: 100px;
+            margin-top: 50px;
             margin-left: 60px;
             margin-right: 40px;
 
@@ -34,12 +34,35 @@
 
     </style>
 
+    <script>
+        function previewImage(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        document.getElementById('image-preview').src = e.target.result;
+        document.getElementById('image-preview').style.display = 'block';
+      };
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+    </script>
+
 </head>
 <body>
-    <label for="upload_image">  
-        <img src="upload_image.png" title="upload_image" alt="upload image Icon" width="50px" height="50" >
-    </label>
-    <input type="file" accept="image/.jpeg , image/.png" value="" name="upload_image" id="upload_image" >
+   
+    <!-- Upload icon -->
+
+  
+  <!-- Selected image preview -->
+  <img id="image-preview" style="display:none; max-width:200px; max-height:200px; margin-top:10px; margin-left: 120px; border: 1px dotted gold; margin-top: 40px;">
+
+  <label for="upload_image">
+    <img id="upload-icon" src="upload_image.png" title="upload_image" alt="upload image Icon" width="50px" height="50">
+  </label>
+  
+  <!-- File input -->
+  <input type="file" accept="image/jpeg, image/png" id="upload_image" onchange="previewImage(this);">
+
     
 </body>
 </html>
