@@ -4,65 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
-        label
+        form input
         {
-            margin-top: 100px;
-            margin-left: 60px;
+            border: 2px dotted rgb(87, 78, 29);
+            border-radius: 15px;
+
+            background-color: rgb(34, 247, 14);
+
+            margin-top: 80px;
+            margin-left: 50px;
             margin-right: 40px;
 
-            padding: 40px;
-
-            font-size: larger;
         }
-
-        label img
-        {
-            margin-top: 50px;
-            margin-left: 60px;
-            margin-right: 40px;
-
-            padding: 40px;
-        }
-
-        input
-        {
-            position: absolute;
-            opacity: 0;
-            z-index: -1;
-        }
-
     </style>
 
-    <script>
-        function previewImage(input) {
-    if (input.files && input.files[0]) {
-      var reader = new FileReader();
-      reader.onload = function(e) {
-        document.getElementById('image-preview').src = e.target.result;
-        document.getElementById('image-preview').style.display = 'block';
-      };
-      reader.readAsDataURL(input.files[0]);
-    }
-  }
-    </script>
 
 </head>
 <body>
-   
-    <!-- Upload icon -->
+    
 
-  
-  <!-- Selected image preview -->
-  <img id="image-preview" style="display:none; max-width:200px; max-height:200px; margin-top:10px; margin-left: 120px; border: 1px dotted gold; margin-top: 40px;">
+    <form action="/.scrpt" post>
+        <input type="image" src="bell-dynamic-gradient.png" height="80px" >
 
-  <label for="upload_image">
-    <img id="upload-icon" src="upload_image.png" title="upload_image" alt="upload image Icon" width="50px" height="50">
-  </label>
-  
-  <!-- File input -->
-  <input type="file" accept="image/jpeg, image/png" id="upload_image" onchange="previewImage(this);">
-
+    </form>
     
 </body>
 </html>
