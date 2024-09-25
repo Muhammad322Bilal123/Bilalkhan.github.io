@@ -1,32 +1,66 @@
-/* H1 Header */
-header h1
-{
-    margin-top: 40px;
-    margin-bottom: 30px;
-    margin-left: 2rem;
-}
-
-/* Mian */
-/* main
+/* Section Header*/
+header
 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
 
-} */
+    /* position: sticky;
+    top: 0; */
 
-form
-{
-   display: grid;
-   align-content: center;
-   align-items: center;
+    border: 2px dashed gold;
+    border-radius: 60px;
+
+    color: blue;
+    background-color: rgb(255, 255, 255);
 }
 
-main h2
+header > h1
 {
-    text-align: center;
-    border: 1px solid rgb(61, 9, 252);
-    border-radius: 90px;
-    margin-top: 45px;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    display: inline;
+
+    font-family: sans-serif;
+    font-size: 5vw;
+} 
+
+
+/* Main Content */
+.main_content_area
+{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    display: grid;
+    justify-content: center;
 }
+
+/**/
+.subject_selection ul
+{
+    margin-right: 30vw;
+    padding: 10px;
+}
+
+.subject_selection ul > li
+{
+    padding-top: 12px;
+    padding-left: 5px;
+
+    font-size: larger;
+}
+
+fieldset
+{
+    border-color: aqua;
+}
+
+fieldset > legend
+{
+    font: 300;
+    font-family: sans-serif;
+    font-size: larger;
+    color: rgb(16, 17, 17);
+}
+
