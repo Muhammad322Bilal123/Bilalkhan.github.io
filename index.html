@@ -3,15 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="index.js" ></script>
-    <link rel="stylesheet" href="fle.css" >
     <title>Document</title>
+
+    <style>
+        .parent-container
+        {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: space-around;
+        }
+
+        .i
+        {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 200px;
+            height: 200px;
+
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            border: 2px dashed gold;
+            border-radius: 50px;
+
+            background-color: blue;
+        }
+
+    </style>
+
 </head>
 <body>
-    <picture>
-        <source media="(max-width: 800px)" srcset="menu-burger.svg" >
-        <source media="(max-width: 1200px)" srcset="searchicon.png >
-        <img src="bell-dynamic-gradient.png" alt="fallback img">
-    </picture>
+
+    <div class="parent-container">
+        <div class="i item1">item1</div>
+        <div class="i item2">item2</div>
+        <div class="i item3">item3</div>
+        <div class="i item4">item4</div>
+    </div>
+    
 </body>
 </html>
