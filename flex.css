@@ -1,66 +1,75 @@
-/* Section Header*/
-header
+/*        Main Navigation          */
+/* Targeting all the svg */
+.section-header svg
+{
+    fill: rgb(255, 255, 255);
+}
+
+/* Navigation wrapper */
+.section-header .navigation-wrapper
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    align-items: center;
+    margin-top: 10px;
 
-    /* position: sticky;
-    top: 0; */
-
-    border: 2px dashed gold;
-    border-radius: 60px;
-
-    color: blue;
-    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
 }
 
-header > h1
+/* all header's div and h1 */
+.section-header div , h1
 {
     display: inline;
-
-    font-family: sans-serif;
-    font-size: 5vw;
-} 
-
-
-/* Main Content */
-.main_content_area
-{
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-
-    display: grid;
     justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
 }
 
-/**/
-.subject_selection ul
+/* Left side navigation */
+.navigation-wrapper .lft-navigation
 {
-    margin-right: 30vw;
-    padding: 10px;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-left: 11px;
 }
 
-.subject_selection ul > li
+/* Right side navigation */
+.navigation-wrapper .rgt-navigation
 {
-    padding-top: 12px;
-    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    gap: 19px;
 
-    font-size: larger;
+    margin-right: 11px;
 }
 
-fieldset
+*
 {
-    border-color: aqua;
+    margin: 0;
+    padding: 0;
 }
 
-fieldset > legend
+
+
+
+/*        Main content          */
+/* Video container */
+.video-container > video
 {
-    font: 300;
-    font-family: sans-serif;
-    font-size: larger;
-    color: rgb(16, 17, 17);
+    height: 100vh;
+    width: 100vw; 
+
+   
 }
+
+
+
+
 
