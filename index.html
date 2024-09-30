@@ -4,43 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #intro-video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: #000;
-        z-index: 1000;
-}
-
-    #video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    </style>
-
-    <script>
-        const video = document.getElementById('video');
-        const introVideo = document.getElementById('intro-video');
-
-        video.play();
-
-        setTimeout(() => {
-        introVideo.style.display = 'none';
-        }, 3000); // 3000ms = 3s
-    </script>
-
+    <link rel="stylesheet" href="div.css" >
 </head>
-<body>
+<body style="background-color: rgba(235, 6, 6, 0.178);">
+    
+    <!-- Section Header -->
+    <header class="section-header">
+        <div class="navigation-wrapper" role="navigation" >
+            <!-- Left side - navigation -->
+            <div class="lft-navigation" >
+                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="19" height="19"><path d="M17.17,24a1,1,0,0,1-.71-.29L8.29,15.54a5,5,0,0,1,0-7.08L16.46.29a1,1,0,1,1,1.42,1.42L9.71,9.88a3,3,0,0,0,0,4.24l8.17,8.17a1,1,0,0,1,0,1.42A1,1,0,0,1,17.17,24Z"/>
+                </svg>
+                <h1 class="nav-h1">Reels</h1>
+            </div>
 
-    <div id="intro-video">
-        <video id="video" autoplay muted loop playsinline>
-          <source src="idea.mp4" type="video/mp4">
-        </video>
-    </div>
+            <!-- Right side - navigation -->
+            <div class="rgt-navigation" >
+                <div class="info-icon">
+                    <label for="back" aria-labelledby="back-button"></label>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="19" height="19"><path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"/>
+                    </svg>
+                </div>
+                <div class="clock-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="22" height="22"><path d="M24,7.64v8.666c0,.635-.353,1.206-.92,1.489-.238,.119-.493,.177-.747,.177-.353,0-.702-.113-.997-.334l-2.336-2.327v.19c0,2.481-2.019,4.5-4.5,4.5H4.5c-2.481,0-4.5-2.019-4.5-4.5v-7c0-2.481,2.019-4.5,4.5-4.5H14.5c2.481,0,4.5,2.019,4.5,4.5v.157l2.281-2.301c.563-.428,1.23-.489,1.799-.205,.568,.284,.92,.854,.92,1.489Zm-6,.86c0-1.93-1.57-3.5-3.5-3.5H4.5c-1.93,0-3.5,1.57-3.5,3.5v7c0,1.93,1.57,3.5,3.5,3.5H14.5c1.93,0,3.5-1.57,3.5-3.5v-7Zm5-.86c0-.257-.138-.48-.368-.595-.23-.115-.491-.091-.697,.062l-2.936,2.97v3.821l2.989,2.986c.152,.108,.412,.133,.643,.017,.23-.115,.368-.337,.368-.595V7.64Z"/></svg>
+                </div>
+                <div class="profile-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="19" height="19"><path d="M16.043,14H7.957A4.963,4.963,0,0,0,3,18.957V24H21V18.957A4.963,4.963,0,0,0,16.043,14Z"/><circle cx="12" cy="6" r="6"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- section Mian -->
+    <main class="section-main">
+        <!-- Video container -->
+        <div class="video-container">
+            <video
+            autoplay
+            controls
+            loop>
+                <source src="Beachwaves.mp4" >
+            </video>
+        </div>
+
+        <!-- User profile view -->
+        <div class="user-profile-view">
+
+        </div>
+
+        <!-- video description -->
+        <div class="video-description">
+
+        </div>
+
+        <!-- Video engagment -->
+        <div class="video-engagment-icon">
+
+        </div>
+
+        <!-- comment -->
+        <div class="comment">
+
+        </div>
+    </main>
     
 </body>
 </html>
