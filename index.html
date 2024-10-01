@@ -4,78 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="flex.css" >
+
+    <style>
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        main
+        {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        abbr
+        {
+            text-decoration: none;
+        }
+
+        span
+        {
+            color: rgb(36, 165, 58);
+        }
+
+        h1
+        {
+            margin-top: 4px;
+            font-weight: 500;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 00;
+        
+            font-size: xx-large;
+        }
+
+        /* Profile view container */
+        main > .profile-view-container
+        {
+            border: 1px solid;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+            background-color: rgba(236, 244, 250, 0.212);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            padding-right: 10px;
+        }
+
+        ul li
+        {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        /* User profile area */
+        .profile-view-container > .user-profile-container
+        {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            
+        }
+
+        /* account info card */
+        .profile-view-container .account-info-wrapper
+        {
+            border: 1px solid darkcyan;
+            border-radius: 20px;
+            margin-left: 8px;
+            padding-left: 9px;
+            padding-right: 9px;
+            font-size: large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+            backdrop-filter: blur(10px);
+            background-color: rgba(white,white,white, 0.9);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 1;
+        }
+
+        .profile-view-container .title
+        {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 00;
+        }
+
+        /* personal info card */
+        .profile-view-container .personal-info-wrapper
+        {
+            border: 1px solid darkcyan;
+            border-radius: 20px;
+            margin-left: 8px;
+            margin-bottom: 15px;
+            padding-left: 9px;
+            padding-right: 9px;
+            font-size: large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+            backdrop-filter: blur(10px);
+            background-color: rgba(white,white,white, 0.9);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 1;
+        }
+        
+    </style>
+
 </head>
-<body style="background-color: rgba(235, 6, 6, 0.178);">
-    
-    <!-- Section Header -->
-    <header class="section-header">
-        <div class="navigation-wrapper" role="navigation" >
-            <!-- Left side - navigation -->
-            <div class="lft-navigation" >
-                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="19" height="19"><path d="M17.17,24a1,1,0,0,1-.71-.29L8.29,15.54a5,5,0,0,1,0-7.08L16.46.29a1,1,0,1,1,1.42,1.42L9.71,9.88a3,3,0,0,0,0,4.24l8.17,8.17a1,1,0,0,1,0,1.42A1,1,0,0,1,17.17,24Z"/>
-                </svg>
-                <h1 class="nav-h1">Reels</h1>
-            </div>
+<body>
 
-            <!-- Right side - navigation -->
-            <div class="rgt-navigation" >
-                <div class="info-icon">
-                    <label for="back" aria-labelledby="back-button"></label>
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="19" height="19"><path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"/>
-                    </svg>
-                </div>
-                <div class="clock-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="23" height="23"><path d="M24,7.64v8.666c0,.635-.353,1.206-.92,1.489-.238,.119-.493,.177-.747,.177-.353,0-.702-.113-.997-.334l-2.336-2.327v.19c0,2.481-2.019,4.5-4.5,4.5H4.5c-2.481,0-4.5-2.019-4.5-4.5v-7c0-2.481,2.019-4.5,4.5-4.5H14.5c2.481,0,4.5,2.019,4.5,4.5v.157l2.281-2.301c.563-.428,1.23-.489,1.799-.205,.568,.284,.92,.854,.92,1.489Zm-6,.86c0-1.93-1.57-3.5-3.5-3.5H4.5c-1.93,0-3.5,1.57-3.5,3.5v7c0,1.93,1.57,3.5,3.5,3.5H14.5c1.93,0,3.5-1.57,3.5-3.5v-7Zm5-.86c0-.257-.138-.48-.368-.595-.23-.115-.491-.091-.697,.062l-2.936,2.97v3.821l2.989,2.986c.152,.108,.412,.133,.643,.017,.23-.115,.368-.337,.368-.595V7.64Z"/></svg>
-                </div>
-                <div class="profile-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="21" height="21"><path d="m12,0C5.383,0,0,5.383,0,12s5.383,12,12,12,12-5.383,12-12S18.617,0,12,0Zm-4,21.164v-.164c0-2.206,1.794-4,4-4s4,1.794,4,4v.164c-1.226.537-2.578.836-4,.836s-2.774-.299-4-.836Zm9.925-1.113c-.456-2.859-2.939-5.051-5.925-5.051s-5.468,2.192-5.925,5.051c-2.47-1.823-4.075-4.753-4.075-8.051C2,6.486,6.486,2,12,2s10,4.486,10,10c0,3.298-1.605,6.228-4.075,8.051Zm-5.925-15.051c-2.206,0-4,1.794-4,4s1.794,4,4,4,4-1.794,4-4-1.794-4-4-4Zm0,6c-1.103,0-2-.897-2-2s.897-2,2-2,2,.897,2,2-.897,2-2,2Z"/>
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- section Mian -->
     <main class="section-main">
-        <!-- Video container -->
-        <div class="video-container">
-            <video
-            autoplay
-            controls
-            loop
-            preload="auto">
-                <source src="Beachwaves.mp4" >
-            </video>
-        </div>
-
-        <!-- User profile view -->
-        <div class="user-profile-view">
-          <p>.    Here are two small English paragraphs:
-
-
-The sun was setting over the ocean, casting a warm golden light over the waves. The sound of the surf was soothing, and the seagulls flew overhead, their cries echoing through the air.
-
-
-As the stars began to twinkle in the night sky, a sense of peace settled over the beach. The world seemed to slow down, and the only sound was the gentle lapping of the water against the shore.
-
-
-Would you like me to generate more?   </p>
-        </div>
-
-        <!-- video description -->
-        <div class="video-description">
-
-        </div>
-
-        <!-- Video engagment -->
-        <div class="video-engagment-icon">
-
-        </div>
-
-        <!-- comment -->
-        <div class="comment">
-
+        <div class="profile-view-container">
+            <div class="user-profile-container" style="display: flex; flex-direction: column; align-items: center;">
+                <svg style="fill: blanchedalmond;" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="40" height="40"><path d="M16.043,14H7.957A4.963,4.963,0,0,0,3,18.957V24H21V18.957A4.963,4.963,0,0,0,16.043,14Z"/><circle cx="12" cy="6" r="6"/>
+                </svg>
+                <h1>Name .</h1>
+            </div>
+            <div class="account-info-wrapper">
+                <div class="title">
+                    <h2 style="text-align: center;">Account Info</h2>
+                    <hr >
+                </div>
+                <div class="user-data">
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <p>Payment Method : <span>Paypal</span></p>
+                        </li>
+                        <li>
+                            <p>Payment : <span>450$</span></p>
+                            
+                        </li>
+                        <li>
+                            <p><abbr title="Know Ease DEV">KED</abbr> : <span>88</span></p>
+                        </li>
+                        <li>
+                            <p>Status : <span>Good</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="personal-info-wrapper">
+                <div class="title">
+                    <h2 style="text-align: center;">Persoanl Info</h2><hr >
+                </div>
+                <div class="user-data">
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <p>Payment Method : <span>Paypal</span></p>
+                        </li>
+                        <li>
+                            <p>Payment : <span>450$</span></p>
+                            
+                        </li>
+                        <li>
+                            <p><abbr title="Know Ease DEV">KED</abbr> : <span>88</span></p>
+                        </li>
+                        <li>
+                            <p>Status : <span>Good</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </main>
     
