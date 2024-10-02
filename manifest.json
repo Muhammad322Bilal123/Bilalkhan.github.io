@@ -1,7 +1,7 @@
 {
     "name": "isoft",
-    "start_name": "isoft",
-    "short-url": "/",
+    "short_name": "isoft",
+    "start_url": "/",
     "scope": "/",
     "display": "standalone",
     "theme_color": "#9C27B0",
