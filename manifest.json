@@ -1,6 +1,6 @@
 {
     "name": "isoft",
-    "short_name": "isoft",
+    "start_name": "isoft",
     "short-url": "/",
     "scope": "/",
     "display": "standalone",
