@@ -1,9 +1,9 @@
 {
     "name": "isoft",
-    "short_name": "isoft",
+    "short_name": "isft",
     "start_url": "https://muhammad322bilal123.github.io/Bilalkhan.github.io/",
     "scope": "/",
-    "display": "standalone",
+    "display": "fullscreen",
     "theme_color": "#FFF",
     "background_color": "#FFF",
     "icons": [
