@@ -1,11 +1,11 @@
 {
     "name": "isoft",
     "short_name": "isoft",
-    "start_url": "/",
+    "start_url": "https://muhammad322bilal123.github.io/Bilalkhan.github.io/",
     "scope": "/",
     "display": "standalone",
-    "theme_color": "#9C27B0",
-    "background_color": "#EEE",
+    "theme_color": "#FFF",
+    "background_color": "#FFF",
     "icons": [
         {
             "src": "splash.png",
