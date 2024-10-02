@@ -1,11 +1,11 @@
 {
     "name": "isoft",
+    "short_name": "isoft",
     "short-url": "/",
     "scope": "/",
     "display": "standalone",
     "theme_color": "#9C27B0",
-    "backgrou_color": "#EEE",
-    
+    "background_color": "#EEE",
     "icons": [
         {
             "src": "splash.png",
