@@ -43,7 +43,7 @@ main .general-navigation-container
     align-items: center;
     gap: 20px;
     border-bottom: 1px solid;
-    margin-top: -10px;
+    margin-top: 1px;
     margin-left: 10px;
     margin-right: 10px;
 }
