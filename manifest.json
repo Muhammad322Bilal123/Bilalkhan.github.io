@@ -5,10 +5,10 @@
     "scope": "/",
     "display": "standalone",
     "theme_color": "#FFF",
-    "background_color": "#FF338BFF",
+    "background_color": "#ADD8E6",
     "icons": [
         {
-            "src": "savy.png",
+            "src": "savy1.png",
             "sizes": "512x512",
             "type": "image/png"
         }
