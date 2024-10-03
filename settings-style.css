@@ -40,7 +40,7 @@ main .general-navigation-container
 .top-navigation-container
 {
     display: flex;
-    align-items: center;
+    
     gap: 20px;
     border-bottom: 1px solid;
     margin-top: 9px;
