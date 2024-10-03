@@ -1,14 +1,14 @@
 {
     "name": "iBrain",
-    "short_name": "isoft",
+    "short_name": "Savy",
     "start_url": "https://muhammad322bilal123.github.io/Bilalkhan.github.io/",
     "scope": "/",
     "display": "standalone",
     "theme_color": "#FFF",
-    "background_color": "#FFF",
+    "background_color": "#FF338BFF",
     "icons": [
         {
-            "src": "splash.png",
+            "src": "savy.png",
             "sizes": "512x512",
             "type": "image/png"
         }
