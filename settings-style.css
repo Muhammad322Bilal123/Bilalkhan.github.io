@@ -6,6 +6,10 @@
     height: 17px;
 }
 
+body {
+  --android-navigation-bar-color: #FFFFFF;
+}
+
 /* All genral navigaiton text */
 .general-navigation-container h2
 {
