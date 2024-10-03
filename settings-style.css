@@ -20,7 +20,7 @@ main .general-navigation-container
 {
     display: flex;
     flex-direction: column;
-    margin-left: 8px;
+    margin-left: 11px;
     margin-top: 20px;
     row-gap: 12px;
 }
