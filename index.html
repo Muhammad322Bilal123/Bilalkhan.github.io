@@ -3,238 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#FFF" >
-    <link rel="manifest" href="manifest.json" >
     <title>Document</title>
-
     <style>
-
         *
         {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
-        body {
-  --android-navigation-bar-color: #FFFFFF;
-}
-
-        main
+        .text
         {
-            height: 100vh;
             display: flex;
-            align-items: center;
-        }
-
-        abbr
-        {
-            text-decoration: none;
-        }
-
-        span
-        {
-            color: rgb(36, 165, 58);
-        }
-
-        h1
-        {
-            margin-top: 4px;
-            font-weight: 300;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-weight: 00;
-        
-            font-size: xx-large;
-        }
-
-        h2
-        {
-            font-weight: 300;
-        }
-
-        /* Profile view container */
-        main > .profile-view-container
-        {
-            border: 1px solid white;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-
-            background-image: linear-gradient(to bottom, #39ff0744,#fca58236,#f1c4db21);
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
             align-items: center;
             justify-content: center;
-            padding-top: 10px;
-            padding-bottom: 10PX;
-            gap: 20px;
+            border: 1px solid;
+            width: 100vw;
+            height: 100vh;
+        }
 
-            box-shadow: 0px 0px 7px rgba(0,0,0,0.3);
+        .text > h1
+        {
+            font-family:sans-serif;
+            font-size: 5vw;
+            color: blue;
+        }
+
+        @media (max-width: 800px) {
+            .text > h1{
             
-            padding-right: 10px;
+                font-size: 9vw;
+            }
         }
-
-        ul li
-        {
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 4px;
-            padding-bottom: 4px;
-        }
-
-        /* User profile area */
-        .profile-view-container > .user-profile-container
-        {
-            padding-top: 15px;
-            padding-bottom: 15px;
-            
-        }
-
-        /* account info card */
-        .profile-view-container .account-info-wrapper
-        {
-            border: 1px solid darkcyan;
-            border-radius: 20px;
-            margin-left: 8px;
-            padding-left: 29px;
-            padding-right: 29px;
-            font-size: large;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-
-            backdrop-filter: blur(10px);
-            background-color: rgba(white,white,white, 0.9);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            opacity: 1;
-        }
-
-        .profile-view-container .title
-        {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-weight: 00;
-        }
-
-        /* personal info card */
-        .profile-view-container .personal-info-wrapper
-        {
-            border: 1px solid darkcyan;
-            border-radius: 20px;
-            margin-left: 8px;
-            margin-bottom: 15px;
-            padding-left: 29px;
-            padding-right: 29px;
-            font-size: large;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-
-            backdrop-filter: blur(10px);
-            background-color: rgba(white,white,white, 0.9);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            opacity: 1;
-        }
-
-        .profile-view-container > .link-to-settings
-        {
-            align-self: flex-end;
-
-            fill: rgb(14, 75, 75);
-
-            margin-right: 15px;
-            padding-top: 4px;
-            padding-bottom: 4px;
-            margin-bottom: -29px;
-
-        }
-
-        .profile-view-container > .link-to-settings:hover
-        {
-            fill: blue;
-        }
-
-        .profile-view-container > .link-to-settings:focus
-        {
-            fill: blue;
-        }
-        
     </style>
-
 </head>
 <body>
 
-    <!-- Main Navigation -->
-    <!-- <nav>
-        <div class="link-to-settings">
-            <a href="settings.html" aria-label="settings" >
-                
-            </a>
-        </div>
-    </nav> -->
-
-    <main class="section-main">
-        <div class="profile-view-container">
-            <div class="link-to-settings">
-                <a href="settings.html" aria-label="settings" id="link-to-settings">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="25" height="25">
-                        <g>
-                            <path d="M34.283,384c17.646,30.626,56.779,41.148,87.405,23.502c0.021-0.012,0.041-0.024,0.062-0.036l9.493-5.483   c17.92,15.332,38.518,27.222,60.757,35.072V448c0,35.346,28.654,64,64,64s64-28.654,64-64v-10.944   c22.242-7.863,42.841-19.767,60.757-35.115l9.536,5.504c30.633,17.673,69.794,7.167,87.467-23.467   c17.673-30.633,7.167-69.794-23.467-87.467l0,0l-9.472-5.461c4.264-23.201,4.264-46.985,0-70.187l9.472-5.461   c30.633-17.673,41.14-56.833,23.467-87.467c-17.673-30.633-56.833-41.14-87.467-23.467l-9.493,5.483   C362.862,94.638,342.25,82.77,320,74.944V64c0-35.346-28.654-64-64-64s-64,28.654-64,64v10.944   c-22.242,7.863-42.841,19.767-60.757,35.115l-9.536-5.525C91.073,86.86,51.913,97.367,34.24,128s-7.167,69.794,23.467,87.467l0,0   l9.472,5.461c-4.264,23.201-4.264,46.985,0,70.187l-9.472,5.461C27.158,314.296,16.686,353.38,34.283,384z M256,170.667   c47.128,0,85.333,38.205,85.333,85.333S303.128,341.333,256,341.333S170.667,303.128,170.667,256S208.872,170.667,256,170.667z"/>
-                        </g>
-                        </svg>
-                        
-                </a>
-            </div>
-            <div class="user-profile-container" style="display: flex; flex-direction: column; align-items: center;">
-                <svg style="fill: rgb(122, 111, 93);" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="40" height="40"><path d="M16.043,14H7.957A4.963,4.963,0,0,0,3,18.957V24H21V18.957A4.963,4.963,0,0,0,16.043,14Z"/><circle cx="12" cy="6" r="6"/>
-                </svg>
-                <h1 style="margin-top: 8px">Bilal khan</h1>
-            </div>
-            <div class="account-info-wrapper">
-                <div class="title">
-                    <h2 style="text-align: center;">Account Info</h2>
-                    <hr >
-                </div>
-                <div class="user-data">
-                    <ul style="list-style-type: none;">
-                        <li>
-                            <p>Payment Method : <span>Paypal</span></p>
-                        </li>
-                        <li>
-                            <p>Payment : <span>450$</span></p>
-                            
-                        </li>
-                        <li>
-                            <p><abbr title="Know Ease DEV">KED</abbr> : <span>88</span></p>
-                        </li>
-                        <li>
-                            <p>Status : <span>Good</span></p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="personal-info-wrapper">
-                <div class="title">
-                    <h2 style="text-align: center;">Persoanl Info</h2><hr >
-                </div>
-                <div class="user-data">
-                    <ul style="list-style-type: none;">
-                        <li>
-                            <p>Payment Method : <span>Paypal</span></p>
-                        </li>
-                        <li>
-                            <p>Payment : <span>450$</span></p>
-                            
-                        </li>
-                        <li>
-                            <p><abbr title="Know Ease DEV">KED</abbr> : <span>88</span></p>
-                        </li>
-                        <li>
-                            <p>Status : <span>Good</span></p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </main>
+    <div class="text">
+        <h1>Stay tuned ....</h1>
+    </div>
     
 </body>
 </html>
