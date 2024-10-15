@@ -1,14 +1,14 @@
 {
     "name": "iBrain",
     "short_name": "Savy",
-    "start_url": "/",
+    "start_url": "https://muhammad322bilal123.github.io/Bilalkhan.github.io/",
     "scope": "/",
     "display": "standalone",
     "theme_color": "#FFF",
     "background_color": "#FFF",
     "icons": [
         {
-            "src": "savy3.png",
+            "src": "bell-dynamic-gradient.png",
             "sizes": "512x512",
             "type": "image/png"
         }
