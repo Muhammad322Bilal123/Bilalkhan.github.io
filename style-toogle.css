@@ -50,7 +50,7 @@ input[type="checkbox"].wifi-toggle  + label
 
 input[type="checkbox"].wifi-toggle:checked  + label
 {
-    color: rgb(9, 243, 9);
+    color: #7ede10;
 }
 
 input[type="checkbox"].wifi-toggle + label::before
@@ -93,6 +93,6 @@ input[type="checkbox"].wifi-toggle:checked  + label::after
 {
     transform: translate(2.6rem, 0);
 
-    background-color: rgba(9, 243, 9, 0.856);
+    background-color: #7ede10;
 }
 
