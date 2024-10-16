@@ -6,6 +6,17 @@
     <title>Document</title>
     <link rel="manifest" href="webmanifest.json">
     <link rel="stylesheet" href="style-toogle.css">
+
+    <script>
+        // Get your toggle button element
+const toggleButton = document.querySelector('.your-toggle-button-class');
+
+// Add an event listener to prevent default behavior
+toggleButton.addEventListener('touchstart', (e) => {
+  e.preventDefault();
+});
+    </script>
+    
 </head>
 <body>
 
