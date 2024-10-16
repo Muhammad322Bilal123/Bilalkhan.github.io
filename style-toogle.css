@@ -44,6 +44,8 @@ input[type="checkbox"].wifi-toggle  + label
 
     cursor: pointer;
     transition: all 0.41s ease;
+
+    -webkit-tap-highlight-color: transparent;
 }
 
 input[type="checkbox"].wifi-toggle:checked  + label
