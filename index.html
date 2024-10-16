@@ -16,6 +16,12 @@ toggleButton.addEventListener('touchstart', (e) => {
   e.preventDefault();
 });
     </script>
+
+    <style>
+        .tgl{
+            width: max-content;
+        }
+    </style>
     
 </head>
 <body>
@@ -23,8 +29,10 @@ toggleButton.addEventListener('touchstart', (e) => {
     <div class="toggles-container">
 
         <!-- Toggle for WiFi -->
-        <input type="checkbox" id="wifi-toggle" class="wifi-toggle" >
-        <label for="wifi-toggle" class="checkbox-title">WiFi</label>
+        <div class="tgl">
+            <input type="checkbox" id="wifi-toggle" class="wifi-toggle" >
+            <label for="wifi-toggle" class="checkbox-title">WiFi</label>
+        </div>
 
     </div>
     
