@@ -101,6 +101,47 @@ input:checked ~ svg
         </div>
     </div>
 
+    <p>
+        Here, we just subclass the Dropout layer and override the call() method to force its
+training argument to True (see Chapter 12). Similarly, you could define an MCAlpha
+Dropout class by subclassing AlphaDropout instead. If you are creating a model from
+scratch, it’s just a matter of using MCDropout rather than Dropout. But if you have a
+model that was already trained using Dropout, you need to create a new model that’s
+identical to the existing model except that it replaces the Dropout layers with MCDrop
+out, then copy the existing model’s weights to your new model.
+In short, MC Dropout is a fantastic technique that boosts dropout models and pro‐
+vides better uncertainty estimates. And of course, since it is just regular dropout dur‐
+ing training, it also acts like a regularizer.
+        Here, we just subclass the Dropout layer and override the call() method to force its
+training argument to True (see Chapter 12). Similarly, you could define an MCAlpha
+Dropout class by subclassing AlphaDropout instead. If you are creating a model from
+scratch, it’s just a matter of using MCDropout rather than Dropout. But if you have a
+model that was already trained using Dropout, you need to create a new model that’s
+identical to the existing model except that it replaces the Dropout layers with MCDrop
+out, then copy the existing model’s weights to your new model.
+In short, MC Dropout is a fantastic technique that boosts dropout models and pro‐
+vides better uncertainty estimates. And of course, since it is just regular dropout dur‐
+ing training, it also acts like a regularizer.Here, we just subclass the Dropout layer and override the call() method to force its
+training argument to True (see Chapter 12). Similarly, you could define an MCAlpha
+Dropout class by subclassing AlphaDropout instead. If you are creating a model from
+scratch, it’s just a matter of using MCDropout rather than Dropout. But if you have a
+model that was already trained using Dropout, you need to create a new model that’s
+identical to the existing model except that it replaces the Dropout layers with MCDrop
+out, then copy the existing model’s weights to your new model.
+In short, MC Dropout is a fantastic technique that boosts dropout models and pro‐
+vides better uncertainty estimates. And of course, since it is just regular dropout dur‐
+ing training, it also acts like a regularizer.Here, we just subclass the Dropout layer and override the call() method to force its
+training argument to True (see Chapter 12). Similarly, you could define an MCAlpha
+Dropout class by subclassing AlphaDropout instead. If you are creating a model from
+scratch, it’s just a matter of using MCDropout rather than Dropout. But if you have a
+model that was already trained using Dropout, you need to create a new model that’s
+identical to the existing model except that it replaces the Dropout layers with MCDrop
+out, then copy the existing model’s weights to your new model.
+In short, MC Dropout is a fantastic technique that boosts dropout models and pro‐
+vides better uncertainty estimates. And of course, since it is just regular dropout dur‐
+ing training, it also acts like a regularizer.
+    </p>
+
     
 </body>
 </html>
