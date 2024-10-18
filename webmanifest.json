@@ -1,14 +1,14 @@
 {
-    "name": "iBrain",
-    "short_name": "Savy",
+    "name": "Outlook",
+    "short_name": "Outlook",
     "start_url": "https://muhammad322bilal123.github.io/Bilalkhan.github.io/",
     "scope": "/",
     "display": "standalone",
-    "theme_color": "rgba(245, 222, 179, 0.322)",
+    "theme_color": "#2563eb",
     "background_color": "#FFF",
     "icons": [
         {
-            "src": "U.png",
+            "src": "Outlook.com-logo.wine.png",
             "sizes": "512x512",
             "type": "image/png"
         }
