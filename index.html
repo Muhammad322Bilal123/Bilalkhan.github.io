@@ -82,6 +82,41 @@ input:checked ~ svg
 
     
     </style>
+<script defer>
+    
+document.addEventListener('scroll', () => {
+  document.querySelector('.icons-wrapper').style.bottom = '-60px';
+  document.querySelector('.icons-wrapper').style.opacity = 0;
+});
+
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.icons-wrapper')) {
+    document.querySelector('.icons-wrapper').style.bottom = '-60px';
+    document.querySelector('.icons-wrapper').style.opacity = 0;
+  }
+});
+
+document.addEventListener('touchstart', (e) => {
+  if (!e.target.closest('.icons-wrapper')) {
+    document.querySelector('.icons-wrapper').style.bottom = '-60px';
+    document.querySelector('.icons-wrapper').style.opacity = 0;
+  }
+});
+
+const checkbox = document.getElementById('plus-check');
+
+checkbox.addEventListener('change', () => {
+  if (checkbox.checked) {
+    document.querySelector('.icons-wrapper').style.bottom = '90px';
+    document.querySelector('.icons-wrapper').style.opacity = 1;
+  } else {
+    document.querySelector('.icons-wrapper').style.bottom = '-60px';
+    document.querySelector('.icons-wrapper').style.opacity = 0;
+  }
+});
+
+    </script>
+    
 </head>
 <body>
 
@@ -156,39 +191,6 @@ vides better uncertainty estimates. And of course, since it is just regular drop
 ing training, it also acts like a regularizer.
     </p>
 
-    <script>
     
-document.addEventListener('scroll', () => {
-  document.querySelector('.icons-wrapper').style.bottom = '-60px';
-  document.querySelector('.icons-wrapper').style.opacity = 0;
-});
-
-document.addEventListener('click', (e) => {
-  if (!e.target.closest('.icons-wrapper')) {
-    document.querySelector('.icons-wrapper').style.bottom = '-60px';
-    document.querySelector('.icons-wrapper').style.opacity = 0;
-  }
-});
-
-document.addEventListener('touchstart', (e) => {
-  if (!e.target.closest('.icons-wrapper')) {
-    document.querySelector('.icons-wrapper').style.bottom = '-60px';
-    document.querySelector('.icons-wrapper').style.opacity = 0;
-  }
-});
-
-const checkbox = document.getElementById('plus-check');
-
-checkbox.addEventListener('change', () => {
-  if (checkbox.checked) {
-    document.querySelector('.icons-wrapper').style.bottom = '90px';
-    document.querySelector('.icons-wrapper').style.opacity = 1;
-  } else {
-    document.querySelector('.icons-wrapper').style.bottom = '-60px';
-    document.querySelector('.icons-wrapper').style.opacity = 0;
-  }
-});
-
-    </script>
 </body>
 </html>
