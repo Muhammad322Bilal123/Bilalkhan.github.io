@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    <link rel="manifest" href="webmanifest.json">
+        *
+{
+    margin: 0;
+    padding: 0;
+}
 
+input
+{
+    display: none;
+}
+
+label
+{
+    position: fixed;
+    bottom: 19px;
+
+
+    padding: 8px 8px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(194, 223, 213);
+}
+
+label svg
+{
+    width: 30px;
+}
+
+
+
+.icons-wrapper
+{
+    position: fixed;
+    bottom: -60px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    padding: 0 8px;
+    background-color: rgba(0, 255, 0, 0.616);
+
+    border-radius: 20px;
+
+   transition: all ease-in 0.4s;
+}
+
+
+.icons-wrapper img
+{
+    width: 35px;
+
+    padding: 10px 13px;
+   
+}
+
+input:checked ~ .icons-wrapper 
+{
+    bottom: 90px;
+}
+
+input:checked ~ svg
+{
+    fill: green;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main-container" style="display: flex; align-items: center; justify-content: center;">
+        <label for="plus-check">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <g>
+                    <path d="M480,224H288V32c0-17.673-14.327-32-32-32s-32,14.327-32,32v192H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h192v192   c0,17.673,14.327,32,32,32s32-14.327,32-32V288h192c17.673,0,32-14.327,32-32S497.673,224,480,224z"/>
+                </g>
+            </svg>
+        </label>
+        <input type="checkbox" name="" id="plus-check">
+
+        <div class="icons-wrapper">
+            <img src="UI-icon/bank.svg" >
+            <img src="UI-icon/books.svg" >
+            <img src="UI-icon/calendar-clock.svg" >
+        </div>
+    </div>
+
+    
+</body>
+</html>
