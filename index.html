@@ -43,7 +43,9 @@ label svg
 .icons-wrapper
 {
     position: fixed;
-    bottom: -60px;
+    bottom: 90px;
+
+    opacity: 0;
 
     display: flex;
     align-content: center;
@@ -68,7 +70,7 @@ label svg
 
 input:checked ~ .icons-wrapper 
 {
-    bottom: 90px;
+    opacity: 1;
 }
 
 input:checked ~ svg
