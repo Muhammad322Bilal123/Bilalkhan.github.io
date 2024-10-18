@@ -78,9 +78,49 @@ input:checked ~ svg
     fill: green;
 }
 
+p 
+{
+    margin: 20px 10px;
+}
 
 
     </style>
+<script>
+
+document.addEventListener('scroll', () => {
+  document.querySelector('.icons-wrapper').style.bottom = '-60px';
+  document.querySelector('.icons-wrapper').style.opacity = 0;
+});
+
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.icons-wrapper')) {
+    document.querySelector('.icons-wrapper').style.bottom = '-60px';
+    document.querySelector('.icons-wrapper').style.opacity = 0;
+  }
+});
+
+document.addEventListener('touchstart', (e) => {
+  if (!e.target.closest('.icons-wrapper')) {
+    document.querySelector('.icons-wrapper').style.bottom = '-60px';
+    document.querySelector('.icons-wrapper').style.opacity = 0;
+  }
+});
+
+const checkbox = document.getElementById('plus-check');
+
+checkbox.addEventListener('change', () => {
+  if (checkbox.checked) {
+    document.querySelector('.icons-wrapper').style.bottom = '90px';
+    document.querySelector('.icons-wrapper').style.opacity = 1;
+  } else {
+    document.querySelector('.icons-wrapper').style.bottom = '-60px';
+    document.querySelector('.icons-wrapper').style.opacity = 0;
+  }
+});
+
+    
+</script>
+    
 </head>
 <body>
 
